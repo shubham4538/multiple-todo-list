@@ -47,7 +47,7 @@ function Home({
         };
         try {
           const result = await axios.get(
-            "http://localhost:3001/account/details",
+            "https://multiple-todo-list.vercel.app/account/details",
             config
           );
           setFolders(result.data);

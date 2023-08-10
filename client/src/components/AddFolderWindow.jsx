@@ -54,7 +54,7 @@ function AddFolderWindow({ folderWindow, setFolderWindow }) {
         },
       };
       const result = await axios.post(
-        "http://localhost:3001/account/addfolder",
+        "https://multiple-todo-list.vercel.app/account/addfolder",
         data,
         config
       );

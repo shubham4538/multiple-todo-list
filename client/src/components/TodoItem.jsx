@@ -10,7 +10,7 @@ function TodoItem({ item, folderId, deleteTodo, onClick }) {
     try {
       const data = { status, id, folderId };
       const result = await axios.post(
-        "http://localhost:3001/change/status",
+        "https://multiple-todo-list.vercel.app/change/status",
         data
       );
       toast.success(result.data.message);

@@ -12,7 +12,6 @@ import SignUp from "./pages/SignUp.jsx";
 import Login from "./pages/Login.jsx";
 
 import "./styles/index.css";
-import { useEffect } from "react";
 
 function App() {
   const [folderWindow, setFolderWindow] = useState(false);
@@ -20,10 +19,6 @@ function App() {
   const [deleteFolderWindow, setDeleteFolderWindow] = useState(false);
   const [deleteFolderName, setDeleteFolderName] = useState("");
   const [folderId, setFolderId] = useState("");
-
-  // useEffect(() => {
-  //   console.log(folderId);
-  // }, [folderId]);
 
   return (
     <Router>

@@ -37,7 +37,7 @@ function AddTaskWindow({ taskWindow, setTaskWindow, folderId }) {
         },
       };
       const result = await axios.post(
-        "http://localhost:3001/account/addtodo",
+        "https://multiple-todo-list.vercel.app/account/addtodo",
         data,
         config
       );

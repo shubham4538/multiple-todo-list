@@ -53,7 +53,7 @@ function DeleteFolder({
         },
       };
       const result = await axios.delete(
-        `http://localhost:3001/delete/folder/${folderId}`,
+        `https://multiple-todo-list.vercel.app/delete/folder/${folderId}`,
         config
       );
       toast.success(result.data.message);

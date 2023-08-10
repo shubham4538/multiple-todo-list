@@ -9,13 +9,18 @@ authRouter.post("/signup", async (req, res) => {
   const { username, password } = req.body;
   const user = await UserModel.findOne({ username });
 
-  if (user) {
-    res.status(409).json({ error: "User already exists!" });
-  } else {
-    const hashedPass = await bcrypt.hash(password, 10);
-    const newUser = UserModel({ username, password: hashedPass });
-    await newUser.save();
-    res.status(200).json({ success: "Signed-Up Successfully" });
+  try {
+    if (user) {
+      res.status(409).json({ error: "User already exists!" });
+    } else {
+      const hashedPass = await bcrypt.hash(password, 10);
+      const newUser = UserModel({ username, password: hashedPass });
+      await newUser.save();
+      res.status(200).json({ success: "Signed-Up Successfully" });
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ error: "Something went wrong!" });
   }
 });
 

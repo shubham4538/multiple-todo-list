@@ -30,7 +30,7 @@ function Folder({ taskWindow, setTaskWindow, setFolderId, folderId }) {
         },
       };
       const result = await axios.delete(
-        `http://localhost:3001/delete/todo?todoId=${id}&folderId=${folderId}`,
+        `https://multiple-todo-list.vercel.app/delete/todo?todoId=${id}&folderId=${folderId}`,
 
         config
       );
@@ -50,7 +50,7 @@ function Folder({ taskWindow, setTaskWindow, setFolderId, folderId }) {
         },
       };
       axios
-        .get("http://localhost:3001/account/details", config)
+        .get("https://multiple-todo-list.vercel.app/account/details", config)
         .then((result) => {
           const folders = result.data;
           const todoFolder = folders.filter((item) => item.slug == folder);

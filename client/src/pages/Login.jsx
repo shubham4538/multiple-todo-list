@@ -24,7 +24,10 @@ function Login() {
     setLoading(true);
     const data = { username, password };
     try {
-      const result = await axios.post("http://localhost:3001/auth/login", data);
+      const result = await axios.post(
+        "https://multiple-todo-list.vercel.app/auth/login",
+        data
+      );
       const details = {
         token: result.data.token,
         username: result.data.username,
