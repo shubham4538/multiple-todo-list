@@ -68,6 +68,7 @@ function Home({
       <div
         className="bg-red-500 hover:bg-red-600 absolute top-[-35px] right-0 text-base px-2 pt-1 rounded-2xl cursor-pointer"
         onClick={logOut}
+        title="Log Out"
       >
         <i className="fas fa-power-off"></i>
       </div>

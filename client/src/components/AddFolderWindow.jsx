@@ -77,7 +77,7 @@ function AddFolderWindow({ folderWindow, setFolderWindow }) {
     <div
       className={`${
         folderWindow ? "back-visible" : "back-hidden"
-      } flex items-center justify-center absolute bg-[#0000008c] h-screen w-screen backdrop-blur-[4px]`}
+      } z-10 flex items-center justify-center absolute bg-[#0000008c] h-screen w-screen backdrop-blur-[4px]`}
     >
       <div
         className={`${
