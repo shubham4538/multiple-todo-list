@@ -49,13 +49,13 @@ function Login() {
   };
 
   return (
-    <section className="px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <div className="flex flex-col justify-center gap-5 rounded-lg bg-gray-800 border border-gray-700 p-8">
+    <section className="px-6 mt-8 mx-auto">
+      <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-800 border border-gray-700 p-8">
         <h1 className="text-xl md:text-2xl text-white fontSB">
           Login to your account
         </h1>
         <form
-          className="space-y-4 md:space-y-6 fontL"
+          className="flex flex-col gap-4 fontL"
           onSubmit={(e) => SubmitForm(e)}
         >
           <div>
@@ -94,7 +94,6 @@ function Login() {
               "Login"
             )}
           </button>
-          <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
         </form>
         <p className="text-sm text-gray-400 fontL">
           Don’t have an account yet? &nbsp;
@@ -103,6 +102,7 @@ function Login() {
           </Link>
         </p>
       </div>
+      <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
     </section>
   );
 }

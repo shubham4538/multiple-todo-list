@@ -40,13 +40,13 @@ function SignUp() {
   };
 
   return (
-    <section className="px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <div className="flex flex-col justify-center gap-5 rounded-lg bg-gray-800 border border-gray-700 p-8">
+    <section className="px-6 mt-8 mx-auto">
+      <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-800 border border-gray-700 p-8">
         <h1 className="text-xl md:text-2xl text-white fontSB">
           Sign in to your account
         </h1>
         <form
-          className="space-y-4 md:space-y-6 fontL"
+          className="flex flex-col gap-4 fontL"
           onSubmit={(e) => SubmitForm(e)}
         >
           <div>
@@ -58,7 +58,7 @@ function SignUp() {
               name="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="focus:shadow-[0px_0px_10px_-2px_#5c4d7c] bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg w-full p-2 outline-none caret-white"
+              className="focus:shadow-[0px_0px_10px_-2px_#5c4d7c] bg-gray-700 border border-gray-600 text-white sm:text-md rounded-lg w-full p-2 outline-none caret-white fontR"
               placeholder="JohnDoe23"
               required
             />
@@ -73,7 +73,7 @@ function SignUp() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
-              className="focus:shadow-[0px_0px_10px_-2px_#5c4d7c] bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg w-full p-2 outline-none caret-white"
+              className="focus:shadow-[0px_0px_10px_-2px_#5c4d7c] bg-gray-700 border border-gray-600 text-white sm:text-md rounded-lg w-full p-2 outline-none caret-white fontR"
               required
             />
           </div>
@@ -87,12 +87,6 @@ function SignUp() {
               "Sign In"
             )}
           </button>
-          <ToastContainer
-            theme="dark"
-            autoClose={2000}
-            pauseOnFocusLoss={false}
-            pauseOnHover={false}
-          />
         </form>
         <p className="text-sm text-gray-400 fontL">
           Already have an account yet? &nbsp;
@@ -101,6 +95,12 @@ function SignUp() {
           </Link>
         </p>
       </div>
+      <ToastContainer
+        theme="dark"
+        autoClose={2000}
+        pauseOnFocusLoss={false}
+        pauseOnHover={false}
+      />
     </section>
   );
 }
