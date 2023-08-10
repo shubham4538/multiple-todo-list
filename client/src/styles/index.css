@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: fontL;
+  src: url("../assets/fonts/KastelovLight.otf");
+}
+@font-face {
+  font-family: fontR;
+  src: url("../assets/fonts/KastelovRegular.otf");
+}
+@font-face {
+  font-family: fontSB;
+  src: url("../assets/fonts/KastelovSemiBold.otf");
+}
+@font-face {
+  font-family: fontB;
+  src: url("../assets/fonts/KastelovBlack.otf");
+}
+
+.fontL {
+  font-family: fontL;
+}
+.fontR {
+  font-family: fontR;
+}
+.fontSB {
+  font-family: fontSB;
+}
+.fontB {
+  font-family: fontB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
