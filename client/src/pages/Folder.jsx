@@ -108,7 +108,10 @@ function Folder({ taskWindow, setTaskWindow, setFolderId, folderId }) {
   ) : (
     <div className="container gap-5">
       {/* w-[calc(100px+20vw)] max-w-[200px] bg-gray-600  */}
-      <div className="text-2xl fontSB rounded-md">
+      <div className="relative text-2xl fontSB rounded-md">
+        <Link to={"/"}>
+          <i className="absolute left-[calc(-22vw+-12%)] fal fa-arrow-left"></i>
+        </Link>
         <div className="flex gap-2 items-center">
           <i className="fal fa-folder-open"></i>
           <span>{todoFolder.title}</span>

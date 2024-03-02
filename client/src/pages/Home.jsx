@@ -66,12 +66,13 @@ function Home({
   ) : user ? (
     <div className="container relative">
       <div
-        className="bg-red-500 hover:bg-red-600 absolute top-[-35px] right-0 text-base px-2 pt-1 rounded-2xl cursor-pointer"
+        className="bg-red-500 hover:bg-red-600 absolute top-0 right-0 text-base px-2 pt-1 rounded-2xl cursor-pointer"
         onClick={logOut}
         title="Log Out"
       >
         <i className="fas fa-power-off"></i>
       </div>
+      <span className="text-3xl text-[#943ee3] fontB">Multiple To-Do List</span>
       <form>
         <button
           type="button"
