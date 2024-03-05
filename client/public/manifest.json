@@ -3,14 +3,14 @@
   "name": "Multiple To-Do List",
   "icons": [
     {
-      "src": "maskable.png",
+      "src": "maskable",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
       "src": "favicon.ico",
-      "sizes": "48x48",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
