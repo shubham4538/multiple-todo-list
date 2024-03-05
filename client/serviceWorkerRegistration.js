@@ -7,7 +7,7 @@ const isLocalhost = Boolean(
 );
 
 export function register(config) {
-  console.log(process.env.REACT_APP_PUBLIC_URL);
+  console.log(process.env, process.env.NODE_ENV);
   if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
     if (publicUrl.origin !== window.location.origin) {
