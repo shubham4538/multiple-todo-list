@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddFolderWindow from "./components/AddFolderWindow.jsx";
 import AddTaskWindow from "./components/AddTaskWindow.jsx";
 import DeleteFolder from "./components/DeleteFolderWindow.jsx";
-import Heading from "./components/Heading.jsx";
 import Container from "./components/Container.jsx";
 import Home from "./pages/Home.jsx";
 import Folder from "./pages/Folder.jsx";
