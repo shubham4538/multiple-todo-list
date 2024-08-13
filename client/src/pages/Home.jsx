@@ -62,7 +62,7 @@ function Home({
   }, [folderWindow, deleteFolderWindow]);
 
   return loading ? (
-    <div>loading...</div>
+    <div className="text-white font-semibold">loading...</div>
   ) : user ? (
     <div className="container relative">
       <div
@@ -83,7 +83,7 @@ function Home({
         </button>
       </form>
       {folders.length > 0 ? (
-        <div className="flex flex-col gap-2 w-[calc(130px+40vw)] max-w-[400px]">
+        <div className="py-5 flex flex-col gap-2 w-full sm:w-[calc(130px+40vw)] sm:max-w-[600px]">
           {folders.map((folder) => {
             return (
               <Link key={folder._id} to={`/${folder.slug}`}>

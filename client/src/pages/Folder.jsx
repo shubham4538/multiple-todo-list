@@ -104,20 +104,20 @@ function Folder({ taskWindow, setTaskWindow, setFolderId, folderId }) {
   }, [option, todoItems]);
 
   return loading ? (
-    <div>loading...</div>
+    <div className="text-white font-semibold">loading...</div>
   ) : (
-    <div className="container gap-5">
+    <div className="container gap-5 w-full sm:w-[calc(130px+40vw)] sm:max-w-[600px]">
       {/* w-[calc(100px+20vw)] max-w-[200px] bg-gray-600  */}
-      <div className="relative text-2xl fontSB rounded-md">
+      <div className="w-full relative text-2xl fontSB rounded-md">
         <Link to={"/"}>
-          <i className="absolute left-[calc(-22vw+-12%)] fal fa-arrow-left"></i>
+          <i className="absolute left-0 fal fa-arrow-left"></i>
         </Link>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center justify-center">
           <i className="fal fa-folder-open"></i>
           <span>{todoFolder.title}</span>
         </div>
       </div>
-      <div className="flex flex-col gap-3 w-[calc(130px+40vw)]">
+      <div className="flex flex-col gap-3 w-full">
         <div className="flex justify-between items-center">
           <form>
             <button
